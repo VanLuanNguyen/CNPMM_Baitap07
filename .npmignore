@@ -1,0 +1,26 @@
+# Source files
+src/
+example/
+rollup.config.js
+tsconfig.json
+.eslintrc.js
+
+# Development files
+*.log
+*.tgz
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md

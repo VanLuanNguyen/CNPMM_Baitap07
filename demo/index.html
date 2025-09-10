@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Shopping Cart Library Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .demo-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .demo-section h2 {
+            color: #555;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 React Shopping Cart Library Demo</h1>
+        
+        <div class="demo-section">
+            <h2>📦 Cài đặt</h2>
+            <pre><code>npm install react-shopping-cart-library</code></pre>
+        </div>
+
+        <div class="demo-section">
+            <h2>🚀 Sử dụng cơ bản</h2>
+            <pre><code>import { ShoppingCart, CartProvider, useCart } from 'react-shopping-cart-library';
+
+function App() {
+  return (
+    &lt;CartProvider&gt;
+      &lt;ShoppingCartExample /&gt;
+    &lt;/CartProvider&gt;
+  );
+}
+
+function ShoppingCartExample() {
+  const { items, addItem, removeItem, updateQuantity, clearCart } = useCart();
+  
+  return (
+    &lt;ShoppingCart
+      items={items}
+      onAddItem={addItem}
+      onRemoveItem={removeItem}
+      onUpdateQuantity={updateQuantity}
+      onClearCart={clearCart}
+      showCheckout={true}
+    /&gt;
+  );
+}</code></pre>
+        </div>
+
+        <div class="demo-section">
+            <h2>🎨 Components có sẵn</h2>
+            <ul>
+                <li><strong>ShoppingCart</strong> - Component giỏ hàng chính</li>
+                <li><strong>Button</strong> - Button với nhiều variants</li>
+                <li><strong>Input</strong> - Input field với validation</li>
+                <li><strong>Modal</strong> - Modal dialog</li>
+                <li><strong>Card</strong> - Card component</li>
+                <li><strong>CartProvider</strong> - Context provider</li>
+                <li><strong>useCart</strong> - Hook để quản lý giỏ hàng</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2>✨ Tính năng</h2>
+            <ul>
+                <li>✅ Thêm, sửa, xóa sản phẩm trong giỏ hàng</li>
+                <li>✅ Quản lý số lượng sản phẩm</li>
+                <li>✅ Tính tổng tiền tự động</li>
+                <li>✅ Responsive design</li>
+                <li>✅ TypeScript support</li>
+                <li>✅ Customizable UI</li>
+                <li>✅ Context API integration</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2>📚 Documentation</h2>
+            <p>Xem README.md để biết thêm chi tiết về cách sử dụng và API reference.</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>🔗 Links</h2>
+            <ul>
+                <li><a href="https://www.npmjs.com/package/react-shopping-cart-library" target="_blank">NPM Package</a></li>
+                <li><a href="https://github.com/yourusername/react-shopping-cart-library" target="_blank">GitHub Repository</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
